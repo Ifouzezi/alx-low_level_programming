@@ -3,7 +3,8 @@
  * main - Entry point
  *
  * Description: Prints specified text
- * Return: 0 always on Sucess
+ *
+ * Return: 0 always on Success
  */
 int main(void)
 {
