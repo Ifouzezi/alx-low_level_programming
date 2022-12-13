@@ -7,14 +7,15 @@
  */
 int print_putchar(void)
 {
-    char txt[8] = "_putchar";
-    int i;
+	char txt[8] = "_putchar";
+	int i;
 
-    for (i = 0; i < 8; i++) {
-        putchar(txt[i]);
-    }
-    putchar(10);
-    return (0);
+	for (i = 0; i < 8; i++)
+	{
+		putchar(txt[i]);
+	}
+	putchar(10);
+	return (0);
 }
 /**
  * main - entry point
@@ -24,5 +25,5 @@ int print_putchar(void)
  */
 int main(void)
 {
-    return (print_putchar());
+	return (print_putchar());
 }
