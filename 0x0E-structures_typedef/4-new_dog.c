@@ -7,15 +7,18 @@
  *
  * Return: the length of the string
  */
-int string_length(char *str)
+int _strlen(char *s)
 {
-int count = 0;
-while (*str != '\0')
-{
-count++;
-str++;
-}
-return count;
+	int i;
+
+	i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+
+	return (i);
 }
 
 /**
