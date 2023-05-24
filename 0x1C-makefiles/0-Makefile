@@ -1,0 +1,13 @@
+CC = gcc
+CFLAGS = -Wall
+
+SRCS = main.c school.c
+OBJS = $(SRCS:.c=.o)
+
+school: $(OBJS)
+	$(CC) $(CFLAGS) $^ -o $@
+
+all: school
+
+clean:
+	rm -f $(OBJS) school
