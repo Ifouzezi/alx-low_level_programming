@@ -1,11 +1,5 @@
-CC ?= gcc
-SRC ?= main.c school.c
 
-school: $(SRC)
+CC = gcc
+SRC = main.c school.c
+all : $(SRC)
 	$(CC) $(SRC) -o school
-
-all: school
-
-.PHONY: clean
-clean:
-	rm -f school
